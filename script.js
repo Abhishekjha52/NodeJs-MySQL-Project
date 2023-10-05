@@ -60,13 +60,9 @@ app.post('/add', (req, res) => {
     const values = [name, email, age, dob];
     
     db.query(sql, values, (err, result) => {
-        // if (err) throw err;
-        // console.log('Data inserted successfully.');
-        // res.redirect('/');
         if (err) {
           // Handle error
           console.error('Error inserting data:', err);
-          // Optionally, you can also show an error alert here
           res.send('<script>alert("Error inserting data"); window.location="/";</script>');
       } else {
           // Data inserted successfully
