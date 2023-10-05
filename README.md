@@ -38,7 +38,7 @@ These instructions will help you set up and run the project on your local machin
 
    ```bash
    npm install
-4. Configure MYSQL credentails in "app.js"
+4. Configure MYSQL credentails in "script.js"
 
 ### Usage
 
